@@ -24,18 +24,49 @@
 
 <body>
   <header>
+    <!--nav section-->
+    <div class="container mx-auto">
+      <div class="navbar h-10 md:h-28 bg-white md:bg-red-500 mt-5 rounded-full">
+        <div class="navbar-start"> <label tabindex="0" class="ml-4">
+            <div>
+              <ul class="md:flex gap-3 hidden text-white">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+              </ul>
+              <ul class="flex gap-2 items-center md:hidden">
+                <li><a href=""><img src="./img/logo.png" alt=""></a></li>
+                <li>Fruit Burst</li>
+              </ul>
+            </div>
+          </label> </div>
+        <div class="navbar-center md:mr-5 hidden md:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-white text-[40px]"><img src="./img/logo.png" alt="">Fruit Burst</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="md:hidden btn btn-ghost normal-case mr-5"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg></div> <label> <input class="hidden border-0 mr-7 md:flex h-14 w-60 rounded-full pl-5" type="text"
+              placeholder="Search here"> </label>
+        </div>
+      </div>
+    </div>
     <nav class="">
 
     </nav>
   </header>
-  <!--slider section-->
-  <section class="container mx-auto">
 
-    <div class="mx-auto mt-10">
+  <!-- slider section-->
+  <div class="container mx-auto">
+    <div class=" mx-auto mt-10">
       <div class="carousel w-full h-[200px] md:h-auto">
         <div id="slide1" class="carousel-item relative w-full">
 
-          <img src="./img/banner1.png" class="w-full" />
+          <img src="/img/banner1.png" class="w-full" />
           <div class="absolute top-3 grid grid-cols-1 justify-center items-center w-full">
             <h2 class="text-white text-3xl md:text-6xl text-center font-semibold">Exotic tastes at your <br>doorstep
             </h2>
@@ -50,7 +81,7 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="./img/banner3.png" class="w-full" />
+          <img src="/img/banner3.png" class="w-full" />
           <div class="absolute top-3 grid grid-cols-1 justify-center items-center w-full">
             <h2 class="text-white text-3xl md:text-6xl text-center font-semibold">Exotic tastes at your <br>doorstep
             </h2>
@@ -65,7 +96,7 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="./img/banner2.png" class="w-full" />
+          <img src="/img/banner2.png" class="w-full" />
           <div class="absolute top-3 grid grid-cols-1 justify-center items-center w-full">
             <h2 class="text-white text-3xl md:text-6xl text-center font-semibold">Exotic tastes at your <br>doorstep
             </h2>
@@ -89,35 +120,36 @@
               <div class="btn mt-5 mx-auto bg-red-500 text-white border-none">Shop Now</div>
             </div>
           </div>
+
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn border-none text-white bg-[#121212] btn-circle">❮</a>
             <a href="#slide1" class="btn border-none text-white bg-[#121212] btn-circle">❯</a>
           </div>
+
         </div>
       </div>
     </div>
-    <!--fruit item section-->
-    <div class="invisible md:visible absolute w-full -mt-20 mb-10 pb-96">
-      <div class=" bg-white flex p-10 text-center rounded-lg mx-auto w-[65%]  items-center justify-evenly">
-        <div><img class="" src="./img/fruit1.png" alt="">
-          <p>Strawberry</p>
-        </div>
-        <div class=""><img src="./img/fruit2.png" alt="">
-          <p>Orange</p>
-        </div>
-        <div class=""><img src="./img/fruit3.png" alt="">
-          <p>Mango</p>
-        </div>
-        <div class=""><img src="./img/fruit4.png" alt="">
-          <p>Strawberry</p>
-        </div>
-        <div class=""><img src="./img/fruit5.png" alt="">
-          <p>Mango</p>
-        </div>
+  </div>
+  <!--fruit item section-->
+  <div class="invisible md:visible absolute w-full -mt-20">
+    <div class=" bg-white flex p-10 text-center rounded-lg mx-auto w-[65%]  items-center justify-evenly">
+      <div><img class="" src="./img/fruit1.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div class=""><img src="./img/fruit2.png" alt="">
+        <p>Orange</p>
+      </div>
+      <div class=""><img src="./img/fruit3.png" alt="">
+        <p>Mango</p>
+      </div>
+      <div class=""><img src="./img/fruit4.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div class=""><img src="./img/fruit5.png" alt="">
+        <p>Mango</p>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
   <!--Deal section-->
   <section class="container mx-auto md:mt-52">
     <div>
@@ -175,6 +207,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
+              <div class="divider"></div>
               <p>Apples</p>
               <div>
                 <div class="rating">
@@ -226,6 +259,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
+              <div class="divider"></div>
               <p>Orange</p>
               <div>
                 <div class="rating">
@@ -276,6 +310,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
+              <div class="divider"></div>
               <p>Red Dragon</p>
               <div>
                 <div class="rating">
@@ -326,6 +361,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
+              <div class="divider"></div>
               <p>Banana</p>
               <div>
                 <div class="rating">
